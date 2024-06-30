@@ -9,7 +9,19 @@ import SwiftUI
 
 struct LogoView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Circle()
+                .tint(.black)
+            VStack {
+                Image(systemName: "hanger")
+                    .foregroundColor(.white)
+                Text("Fitting Room")
+                    .foregroundColor(.white)
+                    .font(.title)
+                    .bold()
+                .fontWeight(.bold)
+            }
+        }
     }
 }
 

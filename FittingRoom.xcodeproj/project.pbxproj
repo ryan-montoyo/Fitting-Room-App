@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A6227A152C2B55470074CCCE /* FittingRoomApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6227A142C2B55470074CCCE /* FittingRoomApp.swift */; };
-		A6227A172C2B55470074CCCE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6227A162C2B55470074CCCE /* ContentView.swift */; };
+		A6227A172C2B55470074CCCE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6227A162C2B55470074CCCE /* MainView.swift */; };
 		A6227A192C2B55490074CCCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6227A182C2B55490074CCCE /* Assets.xcassets */; };
 		A6227A1C2C2B55490074CCCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6227A1B2C2B55490074CCCE /* Preview Assets.xcassets */; };
 		A6227A402C2B57D70074CCCE /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A6227A3F2C2B57D70074CCCE /* FirebaseAnalytics */; };
@@ -17,6 +17,23 @@
 		A6227A462C2B57D70074CCCE /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A6227A452C2B57D70074CCCE /* FirebaseFirestoreSwift */; };
 		A6227A482C2B57D70074CCCE /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A6227A472C2B57D70074CCCE /* FirebaseStorage */; };
 		A6227A4A2C2B597A0074CCCE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A6227A492C2B597A0074CCCE /* GoogleService-Info.plist */; };
+		A6227A522C2B787A0074CCCE /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6227A512C2B787A0074CCCE /* MainViewViewModel.swift */; };
+		A6227A542C2B79110074CCCE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6227A532C2B79110074CCCE /* LoginView.swift */; };
+		A6227A562C2B79580074CCCE /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6227A552C2B79580074CCCE /* FeedView.swift */; };
+		A6227A582C2B79620074CCCE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6227A572C2B79620074CCCE /* ProfileView.swift */; };
+		A6227A5A2C2B797E0074CCCE /* ClosetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6227A592C2B797E0074CCCE /* ClosetView.swift */; };
+		A6227A5C2C2B798D0074CCCE /* OutfitCreatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6227A5B2C2B798D0074CCCE /* OutfitCreatorView.swift */; };
+		A6227A5E2C2B79A10074CCCE /* AddNewItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6227A5D2C2B79A10074CCCE /* AddNewItemView.swift */; };
+		A6227A602C2B7C330074CCCE /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6227A5F2C2B7C330074CCCE /* HeaderView.swift */; };
+		A6227A622C2B7C490074CCCE /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6227A612C2B7C490074CCCE /* TLButton.swift */; };
+		A6227A642C2B7C860074CCCE /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6227A632C2B7C860074CCCE /* LoginViewViewModel.swift */; };
+		A6227A662C2B7CC00074CCCE /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6227A652C2B7CC00074CCCE /* RegisterView.swift */; };
+		A6227A682C2B7CD60074CCCE /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6227A672C2B7CD60074CCCE /* RegisterViewViewModel.swift */; };
+		A6227A6A2C2B7D000074CCCE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6227A692C2B7D000074CCCE /* User.swift */; };
+		A6227A6C2C2B7D2D0074CCCE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6227A6B2C2B7D2D0074CCCE /* Extensions.swift */; };
+		A6227A6E2C2B90690074CCCE /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6227A6D2C2B90690074CCCE /* LogoView.swift */; };
+		A65CC0262C30C19C00AD1711 /* PlaywriteESDeco-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A65CC0252C30C19C00AD1711 /* PlaywriteESDeco-Regular.ttf */; };
+		A65CC0292C30CB5E00AD1711 /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65CC0282C30CB5E00AD1711 /* ProfileViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,12 +56,30 @@
 /* Begin PBXFileReference section */
 		A6227A112C2B55470074CCCE /* FittingRoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FittingRoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6227A142C2B55470074CCCE /* FittingRoomApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FittingRoomApp.swift; sourceTree = "<group>"; };
-		A6227A162C2B55470074CCCE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A6227A162C2B55470074CCCE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		A6227A182C2B55490074CCCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6227A1B2C2B55490074CCCE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A6227A212C2B55490074CCCE /* FittingRoomTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FittingRoomTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6227A2B2C2B55490074CCCE /* FittingRoomUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FittingRoomUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6227A492C2B597A0074CCCE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A6227A512C2B787A0074CCCE /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		A6227A532C2B79110074CCCE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A6227A552C2B79580074CCCE /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		A6227A572C2B79620074CCCE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A6227A592C2B797E0074CCCE /* ClosetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosetView.swift; sourceTree = "<group>"; };
+		A6227A5B2C2B798D0074CCCE /* OutfitCreatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutfitCreatorView.swift; sourceTree = "<group>"; };
+		A6227A5D2C2B79A10074CCCE /* AddNewItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewItemView.swift; sourceTree = "<group>"; };
+		A6227A5F2C2B7C330074CCCE /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		A6227A612C2B7C490074CCCE /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
+		A6227A632C2B7C860074CCCE /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
+		A6227A652C2B7CC00074CCCE /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		A6227A672C2B7CD60074CCCE /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
+		A6227A692C2B7D000074CCCE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A6227A6B2C2B7D2D0074CCCE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A6227A6D2C2B90690074CCCE /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		A65CC0252C30C19C00AD1711 /* PlaywriteESDeco-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlaywriteESDeco-Regular.ttf"; sourceTree = "<group>"; };
+		A65CC0272C30C1D800AD1711 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A65CC0282C30CB5E00AD1711 /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +133,11 @@
 		A6227A132C2B55470074CCCE /* FittingRoom */ = {
 			isa = PBXGroup;
 			children = (
-				A6227A492C2B597A0074CCCE /* GoogleService-Info.plist */,
-				A6227A142C2B55470074CCCE /* FittingRoomApp.swift */,
-				A6227A162C2B55470074CCCE /* ContentView.swift */,
-				A6227A182C2B55490074CCCE /* Assets.xcassets */,
+				A65CC0272C30C1D800AD1711 /* Info.plist */,
+				A6227A4E2C2B76100074CCCE /* Other */,
+				A6227A4D2C2B76050074CCCE /* Models */,
+				A6227A4C2C2B75FC0074CCCE /* ViewModels */,
+				A6227A4B2C2B75F50074CCCE /* Views */,
 				A6227A1A2C2B55490074CCCE /* Preview Content */,
 			);
 			path = FittingRoom;
@@ -113,6 +149,55 @@
 				A6227A1B2C2B55490074CCCE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A6227A4B2C2B75F50074CCCE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6227A162C2B55470074CCCE /* MainView.swift */,
+				A6227A5B2C2B798D0074CCCE /* OutfitCreatorView.swift */,
+				A6227A532C2B79110074CCCE /* LoginView.swift */,
+				A6227A652C2B7CC00074CCCE /* RegisterView.swift */,
+				A6227A612C2B7C490074CCCE /* TLButton.swift */,
+				A6227A5F2C2B7C330074CCCE /* HeaderView.swift */,
+				A6227A552C2B79580074CCCE /* FeedView.swift */,
+				A6227A572C2B79620074CCCE /* ProfileView.swift */,
+				A6227A592C2B797E0074CCCE /* ClosetView.swift */,
+				A6227A5D2C2B79A10074CCCE /* AddNewItemView.swift */,
+				A6227A6D2C2B90690074CCCE /* LogoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A6227A4C2C2B75FC0074CCCE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A6227A512C2B787A0074CCCE /* MainViewViewModel.swift */,
+				A6227A632C2B7C860074CCCE /* LoginViewViewModel.swift */,
+				A6227A672C2B7CD60074CCCE /* RegisterViewViewModel.swift */,
+				A65CC0282C30CB5E00AD1711 /* ProfileViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A6227A4D2C2B76050074CCCE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A6227A692C2B7D000074CCCE /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A6227A4E2C2B76100074CCCE /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A6227A142C2B55470074CCCE /* FittingRoomApp.swift */,
+				A6227A182C2B55490074CCCE /* Assets.xcassets */,
+				A6227A492C2B597A0074CCCE /* GoogleService-Info.plist */,
+				A6227A6B2C2B7D2D0074CCCE /* Extensions.swift */,
+				A65CC0252C30C19C00AD1711 /* PlaywriteESDeco-Regular.ttf */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +316,7 @@
 			files = (
 				A6227A1C2C2B55490074CCCE /* Preview Assets.xcassets in Resources */,
 				A6227A192C2B55490074CCCE /* Assets.xcassets in Resources */,
+				A65CC0262C30C19C00AD1711 /* PlaywriteESDeco-Regular.ttf in Resources */,
 				A6227A4A2C2B597A0074CCCE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +342,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6227A172C2B55470074CCCE /* ContentView.swift in Sources */,
+				A6227A6E2C2B90690074CCCE /* LogoView.swift in Sources */,
+				A6227A5C2C2B798D0074CCCE /* OutfitCreatorView.swift in Sources */,
+				A6227A562C2B79580074CCCE /* FeedView.swift in Sources */,
+				A6227A662C2B7CC00074CCCE /* RegisterView.swift in Sources */,
+				A6227A172C2B55470074CCCE /* MainView.swift in Sources */,
 				A6227A152C2B55470074CCCE /* FittingRoomApp.swift in Sources */,
+				A6227A542C2B79110074CCCE /* LoginView.swift in Sources */,
+				A6227A682C2B7CD60074CCCE /* RegisterViewViewModel.swift in Sources */,
+				A6227A622C2B7C490074CCCE /* TLButton.swift in Sources */,
+				A6227A6A2C2B7D000074CCCE /* User.swift in Sources */,
+				A6227A602C2B7C330074CCCE /* HeaderView.swift in Sources */,
+				A6227A642C2B7C860074CCCE /* LoginViewViewModel.swift in Sources */,
+				A65CC0292C30CB5E00AD1711 /* ProfileViewViewModel.swift in Sources */,
+				A6227A6C2C2B7D2D0074CCCE /* Extensions.swift in Sources */,
+				A6227A5E2C2B79A10074CCCE /* AddNewItemView.swift in Sources */,
+				A6227A582C2B79620074CCCE /* ProfileView.swift in Sources */,
+				A6227A522C2B787A0074CCCE /* MainViewViewModel.swift in Sources */,
+				A6227A5A2C2B797E0074CCCE /* ClosetView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +523,7 @@
 				DEVELOPMENT_TEAM = G84JXVVV25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FittingRoom/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -450,6 +553,7 @@
 				DEVELOPMENT_TEAM = G84JXVVV25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FittingRoom/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

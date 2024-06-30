@@ -9,7 +9,16 @@ import SwiftUI
 
 struct BackgroundView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            Image(systemName: "tshirt")
+                .foregroundColor(.gray)
+                .rotationEffect(.degrees(15))
+                .opacity(0.5)
+            Image(systemName: "tshirt")
+                .foregroundColor(.gray)
+                .rotationEffect(.degrees(15))
+                .opacity(0.5)
+        }
     }
 }
 
